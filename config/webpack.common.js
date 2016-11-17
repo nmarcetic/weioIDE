@@ -115,6 +115,14 @@ module.exports = function (options) {
           test: /\.json$/,
           loader: 'json-loader'
         },
+        /**
+         * SASS support
+         */
+        {
+          test: /\.scss$/,
+          exclude: /node_modules/,
+          loaders: ['raw-loader', 'sass-loader']
+        },
 
         /*
          * to string and css loader support for *.css files

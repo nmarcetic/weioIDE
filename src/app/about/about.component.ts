@@ -10,8 +10,7 @@ console.log('`About` component loaded asynchronously');
 
 @Component({
   selector: 'about',
-  styles: [`
-  `],
+  styleUrls: ['./about.scss'],
   template: `
     <h1>About</h1>
     <div>
